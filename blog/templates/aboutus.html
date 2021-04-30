@@ -1,0 +1,45 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<title>About Us </title>
+<style>
+
+  .div1{
+    text-align:center;
+    margin:1.3rem 6rem;
+    transition: transform .2s;
+    padding:10px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-image:url({% static 'bg1.jpg' %});
+  } 
+  .div1:hover{
+   transform-style: preserve-3d;
+    transform: scale(1.1);
+  } 
+
+</style>
+
+<div class='div1'>
+<h1>About Us Page</h1>
+Tech sense blog brings you original, relevant content about what’s working right now in online content marketing. And we’re not too humble to say it’s the most popular content marketing and writing blog on the planet.
+</div>
+
+<div class='div1'>
+<h2> OUR TEAM </h2>
+<b>
+<pre>        Gokul R                 Manigandan K             KiranKumar V
+      (211518205046)            (211518205084)           (211518205071)</pre></b>
+
+<p><marquee> <font size= '5'> We believe great blog should work with minimum set up, so you can focus on sharing your story freely.</font></marquee></p>
+</div>
+
+
+<div class='div1'>
+<h2>Touch With Us </h2>
+<p > The Tech Sense Blog community is welcoming and inclusive   </p>
+<p  >follow whatever topics you're interested in</p>
+</div>
+
+ {%endblock%}

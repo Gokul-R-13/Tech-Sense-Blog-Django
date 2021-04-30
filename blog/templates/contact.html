@@ -1,0 +1,26 @@
+{% extends "base.html" %} 
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mt-3 left">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        {% if messages %}
+                            <ul class="messages"> Your Feedback has been Submitted.</ul>
+                        {% endif %}
+                            <h1 class="card-title">Contact Us</h1>
+                            <form form method="post" style="margin-top: 1.3em; width: 100%;">
+                                {% csrf_token %}
+                                {{ form.as_p}}
+                                <input type="submit" class="btn btn-primary  btn-lg" value="Submit">                               
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
