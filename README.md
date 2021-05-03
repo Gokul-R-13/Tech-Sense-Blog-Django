@@ -100,4 +100,4 @@ $ .\env\Scripts\activate
 Running tests:
 
 $ python manage.py test blog
-## [Visit Website] (https://techsenseblog.herokuapp.com/ "TechSense")
+https://techsenseblog.herokuapp.com - automatic! [Tech Sense](https://techsenseblog.herokuapp.com)
