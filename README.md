@@ -1,5 +1,6 @@
-Django Tech Sense Blog
-About
+# Tech Sense Blog
+
+**About**
 This is a demo project for practicing Django. The idea was to build some basic blogging platform.
 
 It was made using Python 3.6 + Django and database is SQLite. Bootstrap was used for styling. Testing is done using untitest module.
