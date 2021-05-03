@@ -14,51 +14,47 @@ App is covered with tests.
 Prerequisites
 [Optional] Install virtual environment:
 
+```
 $ python -m virtualenv env
+```
 [Optional] Activate virtual environment:
 
 On macOS and Linux:
-
+```
 $ source env/bin/activate
+```
 On Windows:
-
+```
 $ .\env\Scripts\activate
+```
 Install dependencies:
-
+```
 $ pip install -r requirements.txt
-How to run
+```
+## How to run
 Default
 You can run the application from the command line with manage.py. Go to the root folder of the application.
 
+Creating Super User:
+```
+$ python manage.py createsuperuser
+```
+
 Run migrations:
-
+```
 $ python manage.py migrate
+```
+
 Initialize data:
-
+```
 $ python manage.py loaddata users posts comments
+```
 Run server on port 8000:
-
+```
 $ python manage.py runserver 8000
-Helper script
-It is possible to run all of the above with helper script:
+```
 
-$ chmod +x scripts/run.sh
-$ scripts/run.sh
-Docker
-It is also possible to run the blog app using docker:
-
-Build the Docker image:
-
-$ docker build -t reljicd/django-blog -f docker\Dockerfile .
-Run the Docker container:
-
-$ docker run --rm -i -p 8000:8000 reljicd/django-blog
-Helper script
-It is possible to run all of the above with helper script:
-
-$ chmod +x scripts/run_docker.sh
-$ scripts/run_docker.sh
-Post Installation
+## Post Installation
 Go to the web browser and visit http://localhost:8000/home
 
 Admin username: admin
@@ -101,4 +97,4 @@ Running tests:
 
 $ python manage.py test blog
 
-**[Tech Sense](https://techsenseblog.herokuapp.com)**
+**[Visit Website](https://techsenseblog.herokuapp.com)**
