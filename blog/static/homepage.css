@@ -201,14 +201,10 @@ footer{
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 3px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align:center;
 	line-height: 35px;
-
 	margin-right: 3px;
 }
 
@@ -216,19 +212,26 @@ footer{
 /* You can remove below code if you don't want Footer to be responsive */
 
 
+
 @media (max-width: 880px) {
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
+	.footer-distributed .footer-right
+	{
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center i{
+	.footer-distributed .footer-center i	
+	{
 		margin-left: 0;
 	}
 
+    	.header h1
+    	{
+        		display: none;
+    	}
 }
